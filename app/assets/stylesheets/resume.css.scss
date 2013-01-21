@@ -1,3 +1,25 @@
 // Place all the styles related to the resume controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+#wrap {
+	width: 500px;
+	margin: auto;
+	background: white;
+	border: 1px #000 solid;
+	padding: 20px;
+}
+
+form {
+	padding:10px;
+}
+input {
+	margin: 10px 0;
+	display: block;
+	height: 25px;
+	width: 200px;
+
+}
+textarea:focus, input:focus {
+	border: 1px solid #600;
+}
