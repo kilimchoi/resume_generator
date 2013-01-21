@@ -6,6 +6,7 @@ class ResumeController < ApplicationController
       @info.email = params[:email] rescue nil
       @info.address1 = params[:address1] rescue nil
       @info.address2 = params[:address2] rescue nil
+      @info.honors = params[:honors] rescue nil
       if params["commit"] == "Generate"
          @info.save
       end
