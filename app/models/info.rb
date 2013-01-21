@@ -1,5 +1,5 @@
 class Info < ActiveRecord::Base
-  attr_accessible :email, :first_name, :last_name
+  attr_accessible :email, :first_name, :last_name, :address1, :address2
   def user_data 
      data = {
 	:email = self.email,
