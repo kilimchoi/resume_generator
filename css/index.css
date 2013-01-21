@@ -1,0 +1,109 @@
+/*********************************************************************************
+ * For modern browsers 
+ *********************************************************************************/
+ 
+.cf:before, .cf:after {content:""; display:table;}
+
+	.cf:after {clear:both;}
+
+/* For IE 6/7 (trigger hasLayout) */
+.cf{ zoom:1; }
+
+/*********************************************************************************
+ * Toolbox
+ *********************************************************************************/
+
+#toolbox{
+	background:#fff;
+	box-shadow:0 2px 3px rgba(0, 0, 0, .2);
+	padding:10px 10px 5px;
+	position:fixed;
+	top:40px; right:40px;
+}
+
+	#toolbox ul{
+		list-style:none;
+		padding:0;
+		margin:0;
+	}
+
+	#toolbox a{
+		margin-bottom:5px;
+		width:100px;
+	}
+
+/*********************************************************************************
+ * Main
+ *********************************************************************************/
+
+body{
+	background:#efefef;
+}
+
+.container{
+	background:#fff;
+	box-shadow:0 2px 3px rgba(0, 0, 0, .2);
+	margin:40px auto;
+	padding:40px;
+	width:720px;
+}
+
+/* header */
+
+.hero-unit h1{
+	margin-bottom:10px;
+}
+
+.hero-unit p,
+.hero-unit li{
+	font-size:15px;
+	line-height:30px;
+}
+
+/*********************************************************************************
+ * Form
+ *********************************************************************************/
+
+form{margin:0;}
+ 
+.well{
+	position:relative;
+}
+
+	.well .well{
+		background:#eee;
+	}
+
+	.well .well:last-child{
+		margin:0;
+	}
+
+	.well h1{
+		font-size:18px;
+		margin-bottom:10px;
+	}
+
+	.well p:last-child{
+		margin-bottom:0;
+	}
+
+textarea,
+input,
+select{margin:0 -4px 0 0;}
+
+	.padright{margin-right:6px;}
+	.history .padright{margin-right:10px;}
+
+	input.header{
+		font-size:26px;
+		line-height:36px;
+		padding:4px;
+		height:36px;
+	}
+
+	textarea{
+		height:54px;
+	}
+
+	.small{width:110px;}
+	.big{width:440px;}

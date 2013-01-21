@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>{FirstName}{LastName}</title>
+	<link rel="stylesheet" href="css/reset.css"/>
+	<link rel="stylesheet" href="css/template.css"/>
+</head>
+<body>
+<div class="container">
+	<div class="node header">
+		<h1>{FirstName} {LastName}</h1>
+		<p class="term">{Term} {Program}</p>
+		<p>#{UWID}</p>
+	</div>
+	<div class="node meta">
+		<div class="item cf">
+			<ul class="left">
+				<li>+1 {Phone}</li>
+				<li>{Email}</li>
+				<li>{Website}</li>
+			</ul>
+			<ul class="right">
+				<li>{Address:Street}</li>
+				<li>{Address:Town}</li>
+				<li>{Address:Postal}</li>
+			</ul>
+		</div>
+	</div>
+	<div class="node history">
+		<h2>{Node[0]:Heading}</h2>
+		<div class="item cf">
+			<h4 class="left">
+				{Node[0]:Item[0]:Start} &ndash; {Node[0]:Item[0]:End}
+			</h4>
+			<div class="right">
+				<h3>{Node[0]:Item[0]:Heading}</h3>
+				<ul>
+					<li>{Node[0]:Item[0]:Details[0]}</li>
+					<li>{Node[0]:Item[0]:Details[1]}</li>
+					<li>{Node[0]:Item[0]:Details[2]}</li>
+				</ul>
+			</div>
+		</div>
+		<div class="item cf">
+			<h4 class="left">
+				{Node[0]:Item[0]:Start} &ndash; {Node[0]:Item[0]:End}
+			</h4>
+			<div class="right">
+				<h3>{Node[0]:Item[1]:Heading}</h3>
+				<ul>
+					<li>{Node[0]:Item[1]:Details[0]}</li>
+					<li>{Node[0]:Item[1]:Details[1]}</li>
+					<li>{Node[0]:Item[1]:Details[2]}</li>
+				</ul>
+			</div>
+		</div>
+		<div class="item cf">
+			<h4 class="left">
+				{Node[0]:Item[0]:Start} &ndash; {Node[0]:Item[0]:End}
+			</h4>
+			<div class="right">
+				<h3>{Node[0]:Item[2]:Heading}</h3>
+				<ul>
+					<li>{Node[0]:Item[2]:Details[0]}</li>
+					<li>{Node[0]:Item[2]:Details[1]}</li>
+					<li>{Node[0]:Item[2]:Details[2]}</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="node generic">
+		<h2>{Node[1]:Heading}</h2>
+		<ul>
+			<li class="item">
+				<h3>{Node[1]:Item[0]:Heading}</h3>
+				<ul>
+					<li>{Node[1]:Item[0]:Details[0]}</li>
+					<li>{Node[1]:Item[0]:Details[1]}</li>
+					<li>{Node[1]:Item[0]:Details[2]}</li>
+				</ul>
+			</li>
+			<li class="item">
+				<h3>{Node[1]:Item[1]:Heading}</h3>
+				<ul>
+					<li>{Node[1]:Item[1]:Details[0]}</li>
+					<li>{Node[1]:Item[1]:Details[1]}</li>
+					<li>{Node[1]:Item[1]:Details[2]}</li>
+				</ul>
+			</li>
+			<li class="item">
+				<h3>{Node[1]:Item[2]:Heading}</h3>
+				<ul>
+					<li>{Node[1]:Item[2]:Details[0]}</li>
+					<li>{Node[1]:Item[2]:Details[1]}</li>
+					<li>{Node[1]:Item[2]:Details[2]}</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+</div>
+</body>
+</html>

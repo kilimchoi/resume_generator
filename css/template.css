@@ -1,0 +1,123 @@
+/* For modern browsers */
+.cf:before,
+.cf:after {
+    content:"";
+    display:table;
+}
+
+.cf:after {
+    clear:both;
+}
+
+/* For IE 6/7 (trigger hasLayout) */
+.cf {
+    zoom:1;
+}
+
+/* Main */
+
+.container{
+	color:#000;
+	font:13px/24px sans-serif;
+	margin:0 auto;
+	padding:20px;
+}
+
+h1, h2, h3, h4,
+ul, ol, p{margin-bottom:20px;}
+
+h1{font-size:21px;}
+h2{font-size:18px;}
+h3{font-size:15px;}
+
+/* Media Specific */
+
+@media print
+{
+	.node.meta .left,
+	.node.meta .right{
+		width:49%;
+	}
+
+	.node.meta .left{float:left;}
+	.node.meta .right{float:right;}
+}
+
+@media screen and (min-width:800px)
+{
+	body{
+		background:#efefef;
+		color:#333;
+	}
+
+	.container{
+		background:#fff;
+		box-shadow:0 2px 3px rgba(0, 0, 0, .2);
+		margin:40px auto;
+		padding:40px;
+		width:720px;
+	}
+
+	.node.meta .left,
+	.node.meta .right{
+		width:49%;
+	}
+
+	.node.meta .left{float:left;}
+	.node.meta .right{float:right;}
+
+	.node.history h4.left,
+	.node.history div.right{
+		float:left;
+	}
+
+	.node.history h4.left{		
+		float:left;
+		overflow:hidden;
+		width:100px;
+	}
+
+	.node.history div.right{
+		border-left:1px solid #ddd;
+		margin-left:19px;
+		padding-left:20px;
+		width:580px;
+	}
+}
+
+/* Nodes  */
+
+.node{
+	padding-top:20px;
+	border-bottom:1px solid #ddd;
+}
+
+.node.header{}
+
+	.node.header .term{
+		font-weight:bold;
+		margin:0;
+	}
+
+.node.meta{}
+
+	.node.meta .left,
+	.node.meta .right{
+		list-style:none;
+		padding:0;
+	}
+
+.node.history{}
+
+	.node.generic ul,
+	.node.history ul{
+		padding-left:40px;
+	}
+
+
+	.node.history h4.left{
+		color:#666;
+		font-weight:normal;
+		font-style:italic;
+		margin-bottom:5px;
+	}
