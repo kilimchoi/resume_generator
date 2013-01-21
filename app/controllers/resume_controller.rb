@@ -7,7 +7,7 @@ class ResumeController < ApplicationController
       @info.address1 = params[:address1] rescue nil
       @info.address2 = params[:address2] rescue nil
       @info.honors = params[:honors] rescue nil
-      if params["commit"] == "Generate"
+      if params["commit"] == "Generate Resume"
          @info.save
       end
       redirect_to("/index/")
