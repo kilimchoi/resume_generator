@@ -14,11 +14,12 @@
 ActiveRecord::Schema.define(:version => 20130121221156) do
 
   create_table "infos", :force => true do |t|
-    t.string   "first_name"
-    t.string   "last_name"
+    t.string   "full_name"
     t.string   "email"
-    t.datetime "created_at",       :null => false
-    t.datetime "updated_at",       :null => false
+    t.string   "address"
+    t.string   "honors_awards_title"
+    t.datetime "created_at",          :null => false
+    t.datetime "updated_at",          :null => false
     t.string   "work_place"
     t.string   "work_description"
   end

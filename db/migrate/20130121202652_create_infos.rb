@@ -3,7 +3,8 @@ class CreateInfos < ActiveRecord::Migration
     create_table :infos do |t|
       t.string :full_name
       t.string :email
-      t.string :honors
+      t.string :address
+      t.string :honors_awards_title
       t.timestamps
     end
   end
