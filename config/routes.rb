@@ -1,11 +1,12 @@
 ResumeGenerator::Application.routes.draw do
   # The priority is based upon order of creation:
   # first created -> highest priority.
+  match ':controller/:action'
+  
   get "resume/generate"
   get "resume/template"
-  
+
   resources :resume
-  match ':controller/:action'
   root :to => "resume#generate"
   
   
