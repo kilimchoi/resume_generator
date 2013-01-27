@@ -8,12 +8,11 @@
 	<span><%= label_tag 'E-mail: ' %></span>
 	<%= email_field_tag 'email', @email %> <br>
 	<span><%= label_tag 'Work Experience: ' %></span>
-	<%= text_field_tag 'work_title', @work_place, :placeholder => "Work Place"  %>
+	<%= text_field_tag 'work_title', @work_title, :placeholder => "Work Place"  %>
 	<%= text_area_tag 'work_description', @work_description, :size => "26x5", :placeholder => "Work Description" %><br>
-	<%= button_tag 'Add More' %><br><br>
 	<span><%= label_tag 'Honors and Awards: ' %></span>
-	<%= text_field_tag 'honors_awards_title', @honors_title, :placeholder => "Ttitle"  %>
-	<%= text_area_tag 'honors_awards_description', @honors_description, :size => "26x5", :placeholder => "Description" %><br>
+	<%= text_field_tag 'honors_title', @honors_title, :placeholder => "Ttitle"  %>
+	<%= text_area_tag 'honors_description', @honors_description, :size => "26x5", :placeholder => "Description" %><br>
 	<%= button_tag 'Add More' %><br><br>
 	<%= submit_tag 'Generate Resume' %>
 

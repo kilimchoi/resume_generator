@@ -5,6 +5,10 @@ class ResumeController < ApplicationController
 		@info.full_name = params[:full_name] rescue nil
 		@info.email = params[:email] rescue nil
 		@info.address = params[:address] rescue nil
+		@info.work_title = params[:work_title] rescue nil
+		@info.work_description = params[:work_description] rescue nil
+		@info.honors_title = params[:honors_title] rescue nil
+		@info.honors_description = params[:honors_description] rescue nil
 		@info.save
 		if params["commit"] == "Generate Resume"
 			redirect_to :action => 'new', :id => @info.id

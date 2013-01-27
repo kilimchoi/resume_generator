@@ -4,7 +4,10 @@ class CreateInfos < ActiveRecord::Migration
       t.string :full_name
       t.string :email
       t.string :address
-      t.string :honors_awards_title
+      t.string :work_title
+      t.string :work_description
+      t.string :honors_title
+      t.string :honors_description
       t.timestamps
     end
   end
