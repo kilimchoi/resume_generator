@@ -1,5 +1,4 @@
 class ResumeController < ApplicationController
-	@infos = Info.all
 	def index
 		@info = Info.new
 		@info.phone = params[:phone] rescue nil
