@@ -1,8 +1,102 @@
-<h3><%= @user_data[:full_name] %></h3>
-<%= @user_data[:work_description] %><br>
-<%= @user_data[:honors_title] %><br>
-<%= @user_data[:honors_description] %><br>
-<p id="pdf_link"><%= link_to "Download Resume (PDF)", :format =>"pdf" %></p>
-
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<title>Resume for <%= @name %></title>
+<style type="text/css">
+	table, html {
+		font-size : 90%;  
+		font-family : "Helvetica Neue", Arial;
+	}
+	table {
+		width : 100%;
+	}
+	*, table td {
+		vertical-align : top;
+	}
+	td {
+		padding : 1 0 0 0;
+		width : 300px;
+	}
+	td:first-child {
+		text-align : left;
+	}
+	td:last-child {
+		text-align : right;
+		white-space : nowrap;
+	}
+	.first {
+		width : 500px !important;
+	}
+	p, ul, ul li {
+		margin : 0;
+		padding : 0;
+	}
+	ul {
+		margin-left : 20px;
+		text-align : left;
+		white-space : normal;
+	}
+	br {
+		clear : both;
+	}
+	.label, .content {
+		margin-top : 10px;
+		float : left;
+	}
+	.label {
+		clear : left;
+		font-weight : bold;
+		width : 1.5in;
+	}
+	.content {
+		width : 6.5in;
+		clear : right;
+	}
+	#name {
+		font-size : 3em;
+		font-weight : bold;
+		display : inline-block;
+	}
+	#contact {
+		display : inline-block;
+		float : right;
+		text-align : right;
+	}
+	#wrapper {
+		width : 8in;
+	}
+</style>
+</head>
+<body>
+<div id="wrapper">
+<div>
+	<div id="name"><%= @user_data[:full_name] %></div>
+	<div id="contact">
+	<%= @user_data[:address] %><br />
+	<%= @user_data[:phone] %><br />      
+	<%= @user_data[:email] %><br />
+	</div>
+	<div class="content">
+		<div class="label">Work Experience:</div><br>
+		<div style="padding-bottom : 0.25em">
+			<strong><%= @user_data[:work_title] %></strong>
+			<span style="float:right"><%= @user_data[:work_date] %></span><br />
+		<ul style="padding-bottom : 0.5em">
+			<%= @user_data[:work_description] %>
+		</ul>
+		</div>
+	</div>
+	<div class="content">
+		<div class="label">Honors:</div><br>
+		<div style="padding-bottom : 0.25em"><strong><%= @user_data[:honors_title] %></strong>
+			<span style="float:right"><%= @user_data[:honors_date] %></span><br />
+		<ul style="padding-bottom : 0.5em">
+			<%= @user_data[:honors_description] %>
+		</ul>
+		</div>
+	</div>
+</div>
+</div>
+</body>
+</html>
 
 

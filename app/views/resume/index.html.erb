@@ -7,12 +7,16 @@
 	<%= text_field_tag 'address', @address %><br>
 	<span><%= label_tag 'E-mail: ' %></span>
 	<%= email_field_tag 'email', @email %> <br>
+	<span><%= label_tag 'Phone Number: ' %></span>
+	<%= telephone_field 'telephone', @telephone %> <br>
 	<span><%= label_tag 'Work Experience: ' %></span>
 	<%= text_field_tag 'work_title', @work_title, :placeholder => "Work Place"  %>
-	<%= text_area_tag 'work_description', @work_description, :size => "26x5", :placeholder => "Work Description" %><br>
+	<%= text_area_tag 'work_description', @work_description, :size => "26x5", :placeholder => "Work Description" %>
+	<%= text_field_tag 'work_date', @work_date, :placeholder => "e.g. 2010-2012" %><br>
 	<span><%= label_tag 'Honors and Awards: ' %></span>
-	<%= text_field_tag 'honors_title', @honors_title, :placeholder => "Ttitle"  %>
-	<%= text_area_tag 'honors_description', @honors_description, :size => "26x5", :placeholder => "Description" %><br>
+	<%= text_field_tag 'honors_title', @honors_title, :placeholder => "Title"  %>
+	<%= text_area_tag 'honors_description', @honors_description, :size => "26x5", :placeholder => "Description" %>
+	<%= text_field_tag 'honors_date', @honors_date, :placeholder => "e.g. 2010-2012" %><br>
 	<%= button_tag 'Add More' %><br><br>
 	<%= submit_tag 'Generate Resume' %>
 
