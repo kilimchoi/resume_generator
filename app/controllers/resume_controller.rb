@@ -14,7 +14,6 @@ class ResumeController < ApplicationController
 	end
 
 	def new
-		puts "enters"
 		@info = Info.find(params[:id])
 		@user_data  = @info.user_data
 	end
